@@ -1,7 +1,8 @@
+//part#1 point 1, changed main as app.js in package.json
 const express = require('express');
 const path = require('path');
 const cors = require('cors');
-const bodyParser = require('body-parser');
+const bodyParser = require('body-parser'); //part#1 point 2
 const ejs = require('ejs');
 
 const nav = [{
@@ -9,7 +10,7 @@ const nav = [{
         title: "Books"
     },
     {
-        link: "/authors",
+        link: "/authors"
         title: "Authors"
     },
     {
@@ -58,5 +59,5 @@ app.get('/', function(req, res) {
 
 
 app.listen(5000, () => {
-    console.log("Server Ready on 5000");
+    console.log("Server Ready on 5000"); //part#1 point5
 });
